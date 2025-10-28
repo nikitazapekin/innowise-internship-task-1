@@ -1,0 +1,33 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+}
+
+.wrapper {
+ 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1278px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+[class*="__largeContainer"] {
+  max-width: 1449px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
