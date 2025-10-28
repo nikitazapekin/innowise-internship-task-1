@@ -1,3 +1,37 @@
-body {
-  
+.header {
+  padding: 15px 0;
+}
+
+.header {
+}
+.header_largeContainer {
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: var(--lightGreen)
+}
+.header-nav {
+}
+.header-btns {
+  display: flex;
+  column-gap: 24px;
+}
+.header-btn {
+  font-weight: 400;
+font-size: 16px;
+color:  var(--black);
+}
+.header-button {
+  background-color: var(--lightGreen);
+  color: var(--white)
+}
+ 
+.footer {
 }
