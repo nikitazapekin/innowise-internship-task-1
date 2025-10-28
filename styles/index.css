@@ -23,11 +23,20 @@
   display: flex;
   column-gap: 24px;
 }
+
 .header__btn {
   font-weight: 400;
   font-size: 16px;
   color: var(--black);
   cursor: pointer;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--black); 
+  text-decoration-thickness: 3px; 
 }
 
 .header__button {
@@ -38,13 +47,11 @@
 .article {
   max-width: 620px;
 }
-.article_theme_wedding {
-}
+ 
 .article__image {
   width: 100%;
 }
-.article__content {
-}
+ 
 .article__title {
   font-weight: 400;
   font-size: 72px;
@@ -169,11 +176,7 @@
   background-color: rgb(219, 149, 149);
   opacity: 0.3;
 }
-
-.top__icon {
-}
-.icon {
-}
+ 
 .top__comments-count {
   font-weight: 500;
   font-size: 16px;
@@ -241,4 +244,23 @@
   line-height: 160%;
   text-transform: uppercase;
   color: var(--black);
+}
+
+
+.button-effect {
+  transition: 0.4s ease-in-out;
+}
+
+.button-effect:hover {
+  background-color:  var(--green)
+}
+
+
+
+.card-effect {
+  transition: 0.4s ease-in-out;
+}
+
+.card-effect:hover {
+ transform: scale(1.05) rotateX(10deg) rotateY(10deg);
 }
