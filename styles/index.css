@@ -95,7 +95,6 @@
 .top__card {
   display: flex;
   column-gap: 16px;
-  
 }
 .top__numeral {
   background-color: var(--lightGray);
@@ -187,15 +186,8 @@
   margin-left: auto;
 }
 
-/* .top {
-  width: 100%;
-margin-top: 40px;
-background-color: red;
-} */
- .stories__marginTop {
-  position: relative;
-  top: 40px;
- 
- }
+.stories__marginTop {
+  padding-top: 40px;
+}
 .footer {
 }
