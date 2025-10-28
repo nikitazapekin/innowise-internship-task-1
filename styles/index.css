@@ -189,5 +189,56 @@
 .stories__marginTop {
   padding-top: 40px;
 }
+
+.cards {
+  margin-top: 80px;
+}
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.card {
+  max-width: 290px;
+}
+.card__image {
+  width: 100%;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  color: var(--black);
+  margin-top: 16px;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--black);
+  margin-top: 16px;
+}
+
 .footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--gray);
+}
+.footer__container {
+  padding: 80px 0;
+}
+.footer__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 24px;
+}
+
+.footer__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: var(--black);
 }
