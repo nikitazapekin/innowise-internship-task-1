@@ -6,32 +6,181 @@
 }
 .header_largeContainer {
 }
-.header-inner {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-title {
+.header__title {
   font-weight: 600;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
-  color: var(--lightGreen)
+  color: var(--lightGreen);
 }
-.header-nav {
+.header__nav {
 }
-.header-btns {
+.header__btns {
   display: flex;
   column-gap: 24px;
 }
-.header-btn {
+.header__btn {
   font-weight: 400;
-font-size: 16px;
-color:  var(--black);
+  font-size: 16px;
+  color: var(--black);
 }
-.header-button {
+
+.header__button {
   background-color: var(--lightGreen);
-  color: var(--white)
+  color: var(--white);
 }
+
+.article {
+  max-width: 620px;
+}
+.article_theme_wedding {
+}
+.article__image {
+  width: 100%;
+}
+.article__content {
+}
+.article__title {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 110%;
+  color: var(--black);
+  font-family: "League Gothic", sans-serif;
+  margin-top: 24px;
+}
+.article__description {
+  margin-top: 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--black);
+  font-family: "Inter", sans-serif;
+}
+
+.stories {
+  margin-top: 40.5px;
+}
+
+.stories__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.top {
+  max-width: 620px;
+  width: 100%;
+}
+.top__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  color: var(--lightGreen);
+  padding-left: 48px;
+}
+.top__cards {
+  margin-top: 16px;
+}
+.top__card {
+  display: flex;
+  column-gap: 16px;
  
+}
+.top__numeral {
+  background-color: var(--lightGray);
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--lightGreen);
+}
+.top__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.top__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  color: var(--black);
+}
+.top__author {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--lightGreen);
+}
+.top__info {
+  display: flex;
+  align-items: center;
+}
+.top__time {
+  margin-top: 2px;
+  padding-right: 12px;
+  color: var(--gray);
+}
+.top__comments {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+.top__icon-wrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  margin-left: 16px;
+}
+.top__icon-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 24px;
+  width: 2px;
+  background-color: var(--gray);
+  transform: translateX(-16px);
+}
+
+.top__icon-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(219, 149, 149);
+  opacity: 0.3;
+}
+
+.top__icon {
+}
+.icon {
+}
+.top__comments-count {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.top__image {
+  max-width: 183px;
+}
+
 .footer {
 }

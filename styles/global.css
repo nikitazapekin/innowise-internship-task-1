@@ -24,7 +24,7 @@ body {
 [class*="__container"] {
   max-width: 1278px;
   margin: 0 auto;
-  padding: 0 40px;
+   
 }
 
 [class*="_largeContainer"] {
