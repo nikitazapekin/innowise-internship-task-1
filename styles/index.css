@@ -27,6 +27,7 @@
   font-weight: 400;
   font-size: 16px;
   color: var(--black);
+  cursor: pointer;
 }
 
 .header__button {
@@ -87,11 +88,14 @@
 }
 .top__cards {
   margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 .top__card {
   display: flex;
   column-gap: 16px;
- 
+  
 }
 .top__numeral {
   background-color: var(--lightGray);
@@ -180,7 +184,18 @@
 }
 .top__image {
   max-width: 183px;
+  margin-left: auto;
 }
 
+/* .top {
+  width: 100%;
+margin-top: 40px;
+background-color: red;
+} */
+ .stories__marginTop {
+  position: relative;
+  top: 40px;
+ 
+ }
 .footer {
 }
