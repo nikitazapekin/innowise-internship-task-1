@@ -1,11 +1,7 @@
 .header {
   padding: 15px 0;
 }
-
-.header {
-}
-.header_largeContainer {
-}
+ 
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -17,8 +13,7 @@
   font-family: "Poppins", sans-serif;
   color: var(--lightGreen);
 }
-.header__nav {
-}
+ 
 .header__btns {
   display: flex;
   column-gap: 24px;
