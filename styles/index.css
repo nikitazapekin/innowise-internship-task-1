@@ -1,7 +1,7 @@
 .header {
   padding: 15px 0;
 }
- 
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   font-family: "Poppins", sans-serif;
   color: var(--lightGreen);
 }
- 
+
 .header__btns {
   display: flex;
   column-gap: 24px;
@@ -30,8 +30,8 @@
 
 .header__btn:hover {
   text-decoration: underline;
-  text-decoration-color: var(--black); 
-  text-decoration-thickness: 3px; 
+  text-decoration-color: var(--black);
+  text-decoration-thickness: 3px;
 }
 
 .header__button {
@@ -42,11 +42,11 @@
 .article {
   max-width: 620px;
 }
- 
+
 .article__image {
   width: 100%;
 }
- 
+
 .article__title {
   font-weight: 400;
   font-size: 72px;
@@ -171,7 +171,7 @@
   background-color: rgb(219, 149, 149);
   opacity: 0.3;
 }
- 
+
 .top__comments-count {
   font-weight: 500;
   font-size: 16px;
@@ -241,21 +241,35 @@
   color: var(--black);
 }
 
-
 .button-effect {
   transition: 0.4s ease-in-out;
 }
 
 .button-effect:hover {
-  background-color:  var(--green)
+  background-color: var(--green);
 }
-
-
 
 .card-effect {
   transition: 0.4s ease-in-out;
 }
 
 .card-effect:hover {
- transform: scale(1.05) rotateX(10deg) rotateY(10deg);
+  transform: scale(1.05) rotateX(10deg) rotateY(10deg);
 }
+
+.burger {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  background-color: var(--black);
+}
+

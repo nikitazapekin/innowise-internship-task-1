@@ -40,3 +40,8 @@ body {
   outline: none;
   cursor: pointer;
 }
+
+
+.desktop-hidden {
+  display: none;
+}

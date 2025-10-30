@@ -1,0 +1,30 @@
+@import "./breakpoints.css";
+
+.header {
+  @media (--tablet)  {
+   background-color: red;
+  }
+}
+
+.desktop-hidden {
+  @media (--tablet) {
+    display: block;
+  }
+}
+
+/*
+@import "./breakpoints.css";
+
+.header {
+  @media (--tablet) {
+    background-color: red;
+  }
+}
+
+.desktop-hidden {
+  @media (--tablet) {
+    display: block;
+  }
+}
+
+*/
