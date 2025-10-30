@@ -26,12 +26,34 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="header__largeContainer header__inner">
           <h1 class="header__title">SHOW BUSINESS</h1>
 
-          <nav class="header__nav">
+          <nav class="header__nav desktop__nav">
             <ul class="header__btns">
+              <li class="header__btn">Home</li>
+              <li class="header__btn">Explore</li>
+              <li class="header__btn">Inspiration</li>
+              <li class="header__btn">Contact us</li>
+            </ul>
+          </nav>
+
+          <button class="header__button button button-effect desktop-button">Log in</button>
+
+          <div class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+
+      <aside class="panel">
+        <div class="pannel__inner">
+          <h1 class="header__title">SHOW BUSINESS</h1>
+          <nav class="header__nav mobile__nav">
+            <ul class="header__btns header__btns-mobile">
               <li class="header__btn">Home</li>
               <li class="header__btn">Explore</li>
               <li class="header__btn">Inspiration</li>
@@ -41,16 +63,12 @@
 
           <button class="header__button button button-effect">Log in</button>
 
-          <div class="burger desktop-hidden">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+          <div class="close">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
           </div>
         </div>
-      </div>
-
-      <aside class="panel"></aside>
-      <!-- 
+      </aside>
       <main class="content">
         <section class="stories">
           <div class="stories__container">
@@ -69,17 +87,19 @@
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Kim Kardashian and Kanye West Divorce</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Kim Kardashian and Kanye West Divorce</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -88,8 +108,10 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
+                       <div class="top__card-info">
+
+                         <div class="top__numeral">2</div>
+                         <div class="top__content">
                     <h4 class="top__subtitle">
                       Prince Harry and Meghan Markle's Exit from Royal Duties
                     </h4>
@@ -104,6 +126,7 @@
                       </div>
                     </div>
                   </div>
+                </div>
 
                   <img src="./assets/stories/story_2.png" alt="Wedding" class="top__image" />
                 </div>
@@ -151,7 +174,7 @@
         </section>
 
         <section class="stories">
-          <div class="stories__container stories__marginTop">
+          <div class="stories__container stories__marginTop stories-article-right">
             <div class="top">
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
@@ -350,7 +373,7 @@
         </section>
 
         <section class="stories">
-          <div class="stories__container stories__marginTop">
+          <div class="stories__container stories__marginTop stories-article-right">
             <div class="top">
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
@@ -517,7 +540,8 @@
             Contact / Tip us / Community guidelines / About / Etnics statement
           </p>
         </div>
-      </footer> -->
+      </footer>
+      <script src="scripts/main.js" type="module"></script>
     </div>
   </body>
 </html>

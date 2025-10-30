@@ -9,6 +9,7 @@ body {
   background-color: var(--whiteBackground);
   font-weight: 400;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -22,9 +23,9 @@ body {
 }
 
 [class*="__container"] {
-  max-width: 1278px;
+  max-width: 1340px;
   margin: 0 auto;
-   
+  padding: 0 30px;
 }
 
 [class*="_largeContainer"] {
@@ -39,9 +40,4 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-
-.desktop-hidden {
-  display: none;
 }

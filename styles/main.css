@@ -1,6 +1,8 @@
- 
+
 @import "variables.css";
-@import "mobile.css";
 @import "reset.css";
 @import "index.css";
 @import "global.css";
+@import "breakpoints.css";  
+@import "mobile.css";
+ 
