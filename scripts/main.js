@@ -5,3 +5,6 @@ const close = document.querySelector(".close");
 
 burger.addEventListener('click', handleOpenBurger);
 close.addEventListener('click', handleOpenBurger);
+
+
+
