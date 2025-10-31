@@ -1,0 +1,82 @@
+.desktop__nav,
+.desktop-button {
+  @media (--tablet) {
+    display: none;
+  }
+}
+
+.burger,
+.panel {
+  @media (--tablet) {
+    display: flex;
+  }
+}
+
+.stories__container {
+  @media (--laptop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.top,
+.article {
+  @media (--laptop) {
+    max-width: 100%;
+  }
+}
+
+.article__title {
+  @media (--laptop) {
+    text-align: center;
+  }
+}
+
+.stories-article-right {
+  @media (--laptop) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.top__card {
+  @media (--mobile) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.top__card-info {
+  @media (--mobile) {
+    margin-bottom: 16px;
+  }
+}
+.top__image {
+  @media (--mobile) {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+}
+
+.cards__container {
+  @media (--laptop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (--mobile) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  @media (--laptop) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+ 
