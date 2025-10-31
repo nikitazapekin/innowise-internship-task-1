@@ -21,18 +21,16 @@
       href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="header__largeContainer header__inner">
           <h1 class="header__title">SHOW BUSINESS</h1>
 
-          <nav class="header__nav">
+          <nav class="header__nav desktop__nav">
             <ul class="header__btns">
               <li class="header__btn">Home</li>
               <li class="header__btn">Explore</li>
@@ -41,10 +39,36 @@
             </ul>
           </nav>
 
-          <button class="header__button button button-effect">Log in</button>
-        </div>
-      </div>
+          <button class="header__button button button-effect desktop-button">Log in</button>
 
+          <div class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+
+      <aside class="panel">
+        <div class="pannel__inner">
+          <h1 class="header__title">SHOW BUSINESS</h1>
+          <nav class="header__nav mobile__nav">
+            <ul class="header__btns header__btns-mobile">
+              <li class="header__btn">Home</li>
+              <li class="header__btn">Explore</li>
+              <li class="header__btn">Inspiration</li>
+              <li class="header__btn">Contact us</li>
+            </ul>
+          </nav>
+
+          <button class="header__button button button-effect">Log in</button>
+
+          <div class="close">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
+          </div>
+        </div>
+      </aside>
       <main class="content">
         <section class="stories">
           <div class="stories__container">
@@ -63,17 +87,19 @@
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Kim Kardashian and Kanye West Divorce</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Kim Kardashian and Kanye West Divorce</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -82,19 +108,21 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Prince Harry and Meghan Markle's Exit from Royal Duties
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Prince Harry and Meghan Markle's Exit from Royal Duties
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -103,17 +131,19 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Adele's Weight extremal Loss Transformation</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Adele's Weight extremal Loss Transformation</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -122,21 +152,24 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Bennifer Reunion (Jennifer Lopez and Ben Affleck)</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Bennifer Reunion (Jennifer Lopez and Ben Affleck)
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_4.png" alt="Wedding" class="top__image" />
                 </div>
               </div>
@@ -145,43 +178,47 @@
         </section>
 
         <section class="stories">
-          <div class="stories__container stories__marginTop">
+          <div class="stories__container stories__marginTop stories-article-right">
             <div class="top">
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_5.png" alt="Wedding" class="top__image" />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Prince Harry and Meghan Markle's Oprah Interview Fallout
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Prince Harry and Meghan Markle's Oprah Interview Fallout
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -190,19 +227,21 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Kanye West's Donda Album Release and Public Statements
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Kanye West's Donda Album Release and Public Statements
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -211,17 +250,19 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -260,17 +301,19 @@
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
@@ -279,63 +322,66 @@
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Prince Harry and Meghan Markle's Oprah Interview Fallout
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Prince Harry and Meghan Markle's Oprah Interview Fallout
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_6.png" alt="Wedding" class="top__image" />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Kanye West's Donda Album Release and Public Statements
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Kanye West's Donda Album Release and Public Statements
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_7.png" alt="Wedding" class="top__image" />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_8.png" alt="Wedding" class="top__image" />
                 </div>
               </div>
@@ -344,83 +390,87 @@
         </section>
 
         <section class="stories">
-          <div class="stories__container stories__marginTop">
+          <div class="stories__container stories__marginTop stories-article-right">
             <div class="top">
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">The Royal Family's Social Media Presence</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">The Royal Family's Social Media Presence</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_13.png" alt="Wedding" class="top__image" />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Zendaya's Career Achievements</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Zendaya's Career Achievements</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_14.png" alt="Wedding" class="top__image" />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Prince William's Earthshot Prize Initiative</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Prince William's Earthshot Prize Initiative</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_15.png" alt="Wedding" class="top__image" />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Chris Pratt's Film Projects</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Chris Pratt's Film Projects</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
                   <img src="./assets/stories/story_16.png" alt="Wedding" class="top__image" />
                 </div>
               </div>
@@ -512,6 +562,7 @@
           </p>
         </div>
       </footer>
+      <script src="scripts/main.js" type="module"></script>
     </div>
   </body>
 </html>
