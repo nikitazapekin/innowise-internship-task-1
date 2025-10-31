@@ -1,0 +1,23 @@
+:root {
+  --lightGreen: #2ad18a;
+  --whiteBackground: #f9f8fe;
+  --white: #fff;
+  --black: #000;
+  --lightGray: #e8eaed;
+  --gray: #9da3ae;
+  --green: #0a660a;
+
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1320px;
+ 
+}
