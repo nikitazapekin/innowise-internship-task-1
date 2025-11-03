@@ -1,3 +1,19 @@
+.header {
+  @media (--tablet) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: var(--whiteBackground);
+  }
+}
+
+.article_theme_wedding {
+  @media (--tablet) {
+    margin-top: 68px;
+  }
+}
+
 .desktop__nav,
 .desktop-button {
   @media (--tablet) {
@@ -79,4 +95,3 @@
     width: 100%;
   }
 }
- 
