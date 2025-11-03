@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   import('./burger.js')
     .then(module => {
       const handleOpenBurger = module.default;
