@@ -7,49 +7,89 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="image" href="./assets/article/Wedding.webp" imagesrcset="" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&family=League+Gothic&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="header__largeContainer header__inner">
           <h1 class="header__title">SHOW BUSINESS</h1>
 
-          <nav class="header__nav">
+          <nav class="header__nav desktop__nav">
             <ul class="header__btns">
-              <li class="header__btn">Home</li>
-              <li class="header__btn">Explore</li>
-              <li class="header__btn">Inspiration</li>
-              <li class="header__btn">Contact us</li>
+              <li class="header__btn">
+                <a href="#" class="link">Home</a>
+              </li>
+              <li class="header__btn">
+                <a href="#" class="link">Explore</a>
+              </li>
+              <li class="header__btn">
+                <a href="#" class="link">Inspiration</a>
+              </li>
+              <li class="header__btn">
+                <a href="#" class="link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__button button button-effect desktop-button">Log in</button>
+
+          <div class="burger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+
+      <aside class="panel">
+        <div class="pannel__inner">
+          <h1 class="header__title">SHOW BUSINESS</h1>
+          <nav class="header__nav mobile__nav">
+            <ul class="header__btns header__btns-mobile">
+              <li class="header__btn">
+                <a href="#" class="link">Home</a>
+              </li>
+              <li class="header__btn">
+                <a href="#" class="link">Explore</a>
+              </li>
+              <li class="header__btn">
+                <a href="#" class="link">Inspiration</a>
+              </li>
+              <li class="header__btn">
+                <a href="#" class="link">Contact us</a>
+              </li>
             </ul>
           </nav>
 
           <button class="header__button button button-effect">Log in</button>
-        </div>
-      </div>
 
+          <div class="close">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
+          </div>
+        </div>
+      </aside>
       <main class="content">
         <section class="stories">
           <div class="stories__container">
             <div class="article article_theme_wedding">
-              <img src="./assets/article/Wedding.png" alt="Wedding" class="article__image" />
+              <img
+                src="./assets/article/Wedding.webp"
+                alt="Wedding"
+                class="article__image"
+                fetchpriority="high"
+                loading="eager"
+              />
               <div class="article__content">
                 <h2 class="article__title">Princess Beatrice's Wedding</h2>
                 <p class="article__description">
@@ -63,81 +103,115 @@
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Kim Kardashian and Kanye West Divorce</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Kim Kardashian and Kanye West Divorce</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img
+                              src="./assets/icons/Chat.svg"
+                              alt="Icon"
+                              class="top__icon icon"
+                              loading="lazy"
+                            />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_1.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_1.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Prince Harry and Meghan Markle's Exit from Royal Duties
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Prince Harry and Meghan Markle's Exit from Royal Duties
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_2.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_2.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Adele's Weight extremal Loss Transformation</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Adele's Weight extremal Loss Transformation</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_3.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_3.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Bennifer Reunion (Jennifer Lopez and Ben Affleck)</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Bennifer Reunion (Jennifer Lopez and Ben Affleck)
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_4.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_4.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -145,94 +219,127 @@
         </section>
 
         <section class="stories">
-          <div class="stories__container stories__marginTop">
+          <div class="stories__container stories__marginTop stories-article-right">
             <div class="top">
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_5.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_5.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Prince Harry and Meghan Markle's Oprah Interview Fallout
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Prince Harry and Meghan Markle's Oprah Interview Fallout
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_6.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_6.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Kanye West's Donda Album Release and Public Statements
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Kanye West's Donda Album Release and Public Statements
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_7.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_7.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_8.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_8.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
 
             <div class="article article_theme_prince">
-              <img src="./assets/article/Prince.png" alt="Wedding" class="article__image" />
+              <img
+                src="./assets/article/Prince.webp"
+                alt="Wedding"
+                class="article__image"
+                loading="lazy"
+              />
               <div class="article__content">
                 <h2 class="article__title">Prince Philip's Passing</h2>
                 <p class="article__description">
@@ -247,7 +354,12 @@
         <section class="stories">
           <div class="stories__container stories__marginTop">
             <div class="article article_theme_prince">
-              <img src="./assets/article/Gaga.png" alt="Wedding" class="article__image" />
+              <img
+                src="./assets/article/Gaga.webp"
+                alt="Wedding"
+                class="article__image"
+                loading="lazy"
+              />
               <div class="article__content">
                 <h2 class="article__title">Lady Gaga in "House of Gucci"</h2>
                 <p class="article__description">
@@ -260,83 +372,108 @@
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Taylor Swift's Re-Recordings</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
 
-                  <img src="./assets/stories/story_5.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_5.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Prince Harry and Meghan Markle's Oprah Interview Fallout
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Prince Harry and Meghan Markle's Oprah Interview Fallout
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_6.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_6.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">
-                      Kanye West's Donda Album Release and Public Statements
-                    </h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">
+                        Kanye West's Donda Album Release and Public Statements
+                      </h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_7.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_7.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Britney Spears' Conservatorship Battle</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_8.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_8.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -344,90 +481,119 @@
         </section>
 
         <section class="stories">
-          <div class="stories__container stories__marginTop">
+          <div class="stories__container stories__marginTop stories-article-right">
             <div class="top">
               <h3 class="top__title">Top stories</h3>
               <div class="top__cards">
                 <div class="top__card">
-                  <div class="top__numeral">1</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">The Royal Family's Social Media Presence</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">1</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">The Royal Family's Social Media Presence</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_13.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_13.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">2</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Zendaya's Career Achievements</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">2</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Zendaya's Career Achievements</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_14.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_14.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">3</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Prince William's Earthshot Prize Initiative</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">3</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Prince William's Earthshot Prize Initiative</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_15.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_15.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
 
                 <div class="top__card">
-                  <div class="top__numeral">4</div>
-                  <div class="top__content">
-                    <h4 class="top__subtitle">Chris Pratt's Film Projects</h4>
-                    <p class="top__author">David Pierce</p>
-                    <div class="top__info">
-                      <h5 class="top__time">10:00 AM</h5>
-                      <div class="top__comments">
-                        <div class="top__icon-wrapper">
-                          <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                  <div class="top__card-info">
+                    <div class="top__numeral">4</div>
+                    <div class="top__content">
+                      <h4 class="top__subtitle">Chris Pratt's Film Projects</h4>
+                      <p class="top__author">David Pierce</p>
+                      <div class="top__info">
+                        <h5 class="top__time">10:00 AM</h5>
+                        <div class="top__comments">
+                          <div class="top__icon-wrapper">
+                            <img src="./assets/icons/Chat.svg" alt="Icon" class="top__icon icon" />
+                          </div>
+                          <p class="top__comments-count">87</p>
                         </div>
-                        <p class="top__comments-count">87</p>
                       </div>
                     </div>
                   </div>
-
-                  <img src="./assets/stories/story_16.png" alt="Wedding" class="top__image" />
+                  <img
+                    src="./assets/stories/story_16.webp"
+                    alt="Wedding"
+                    class="top__image"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
 
             <div class="article article_theme_prince">
-              <img src="./assets/article/Gohnson.png" alt="Wedding" class="article__image" />
+              <img
+                src="./assets/article/Gohnson.webp"
+                alt="Wedding"
+                class="article__image"
+                loading="lazy"
+              />
               <div class="article__content">
                 <h2 class="article__title">"The Rock" Johnson's Projects</h2>
                 <p class="article__description">
@@ -443,7 +609,7 @@
         <section class="cards">
           <div class="cards__container">
             <div class="card card-effect">
-              <img src="./assets/cards/card_1.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_1.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Ryan Reynolds and Blake Lively's Philanthropy</h3>
               <p class="card__description">
                 Updates on the philanthropic activities of Ryan Reynolds.
@@ -451,7 +617,7 @@
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_2.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_2.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Prince Andrew's Legal Issues</h3>
               <p class="card__description">
                 Ongoing coverage of legal matters involving Prince Andrew.
@@ -459,19 +625,19 @@
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_3.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_3.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Reese Witherspoon's Production Ventures</h3>
               <p class="card__description">News on Leonardo DiCaprio's ongoing environmental.</p>
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_4.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_4.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Queen Elizabeth II's Health Updates</h3>
               <p class="card__description">Periodic updates on the health of Queen Elizabeth II.</p>
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_5.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_5.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Prince Harry's Memoir Announcement</h3>
               <p class="card__description">
                 Reports on Prince Harry's announcement of a forthcoming.
@@ -479,7 +645,7 @@
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_6.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_6.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Leonardo DiCaprio's Environmental Advocacy</h3>
               <p class="card__description">
                 News on Leonardo DiCaprio's ongoing environmental advocacy.
@@ -487,7 +653,7 @@
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_7.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_7.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Princess Eugenie's Pregnancy Announcement</h3>
               <p class="card__description">
                 News about Princess Eugenie, daughter of Prince Andrew.
@@ -495,7 +661,7 @@
             </div>
 
             <div class="card card-effect">
-              <img src="./assets/cards/card_8.png" alt="Card" class="card__image" />
+              <img src="./assets/cards/card_8.webp" alt="Card" class="card__image" loading="lazy" />
               <h3 class="card__title">Emma Stone's Role in "Cruella"</h3>
               <p class="card__description">
                 Coverage of Emma Stone's role as the iconic Disney villain.
@@ -512,6 +678,8 @@
           </p>
         </div>
       </footer>
+
+      <script src="scripts/main.js" type="module"></script>
     </div>
   </body>
 </html>
